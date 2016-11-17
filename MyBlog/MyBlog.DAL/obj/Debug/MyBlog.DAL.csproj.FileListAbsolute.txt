@@ -1,0 +1,17 @@
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Debug\MyBlog.DAL.dll
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Debug\MyBlog.DAL.pdb
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Debug\EntityFramework.dll
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Debug\MyBlog.Model.dll
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Debug\MyBlog.Model.pdb
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Debug\EntityFramework.xml
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.csprojResolveAssemblyReference.cache
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.dll
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.pdb
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.Migrations.InitialCreate.resources
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.csproj.GenerateResource.Cache
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.Migrations.InitialCreate1.resources
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.Migrations.InitialCreate2.resources

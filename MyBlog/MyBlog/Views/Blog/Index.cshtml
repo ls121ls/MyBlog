@@ -1,0 +1,48 @@
+﻿@using Common
+<link href="/css/style.css" rel="stylesheet">
+    <article class="blogs">
+        <h1 class="t_nav"><span>“慢生活”不是懒惰，放慢速度不是拖延时间，而是让我们在生活中寻找到平衡。</span><a href="/" class="n1">网站首页</a><a href="/" class="n2">慢生活</a></h1>
+        <div class="newblog left">
+            @foreach (Blog blog in ViewBag.Blogs)
+            {
+                <h2>@blog.Title</h2>
+                <p class="dateview"><span>发布时间：@blog.CreateDate</span><span>作者：@blog.Author</span><span>分类：[<a href="/news/life/">@blog.BlogType.Value</a>]</span></p>
+                <figure><img src="images/001.png"></figure>
+                <ul class="nlist">
+                    <p>@blog.Content.ShortString(100)</p>
+                    <a title="@blog.Title" href="/Blog/Detail/@blog.BlogId" target="_blank" class="readmore">阅读全文>></a>
+                </ul>
+                <div class="line"></div>
+            }
+           
+            <div class="blank"></div>
+            <div class="ad">
+                <img src="/images/ad.png">
+            </div>
+            <div class="page"><a title="Total record"><b>41</b></a><b>1</b><a href="/news/s/index_2.html">2</a><a href="/news/s/index_2.html">&gt;</a><a href="/news/s/index_2.html">&gt;&gt;</a>
+            </div>
+        </div>
+        <aside class="right">
+            <div class="rnav">
+                <ul>
+                    <li class="rnav1"><a href="/download/" target="_blank">日记</a></li>
+                    <li class="rnav2"><a href="/newsfree/" target="_blank">程序人生</a></li>
+                    <li class="rnav3"><a href="/web/" target="_blank">欣赏</a></li>
+                    <li class="rnav4"><a href="/newshtml5/" target="_blank">短信祝福</a></li>
+                </ul>
+            </div>
+           @Html.Action("News","Home")
+            <div class="visitors">
+                <h3><p>最近访客</p></h3>
+                <ul></ul>
+            </div>
+            <!-- Baidu Button BEGIN -->
+            <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare"><a class="bds_tsina"></a><a class="bds_qzone"></a><a class="bds_tqq"></a><a class="bds_renren"></a><span class="bds_more"></span><a class="shareCount"></a></div>
+            <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585"></script>
+            <script type="text/javascript" id="bdshell_js"></script>
+            <script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+            </script>
+            <!-- Baidu Button END -->
+        </aside>
+    </article>

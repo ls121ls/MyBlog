@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="gb2312">
+    <title>个人博客模板（寻梦）</title>
+    <meta name="keywords" content="个人博客模板,博客模板" />
+    <meta name="description" content="寻梦主题的个人博客模板，优雅、稳重、大气,低调。"/>
+    <meta property="qc:admins" content="350027600364671306654" />
+    <link href="/css/base.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/modernizr.js"></script>
+    <![endif]-->
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <header style="z-index: 100002;">
+        <div id="logo"><a href="/"></a></div>
+        <nav class="topnav" id="topnav"><a href="/Home/Index"><span>首页</span><span class="en">Protal</span></a>
+            <a href="/Home/About"><span>关于我</span><span class="en">About</span></a>
+            <a href="/WelFare/Index"><span>福利分享</span><span class="en">Life</span></a>
+            <a href="#"><span>碎言碎语</span><span class="en">Doing</span></a>
+            <a href="#"><span>云盘分享</span><span class="en">Share</span></a>
+            <a href="/Folder/Index"><span>美图欣赏</span><span class="en">Learn</span></a>
+        <a href="/Message/Index"><span>留言版</span><span class="en">Gustbook</span></a></nav>
+    </header>
+    @RenderBody()
+    <footer>
+        <p>Design by DanceSmile <a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备11002373号-1</a> <a href="/">网站统计</a></p>
+    </footer>
+<script src="/js/silder.js"></script>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3a479ee9ae1de5471f1a9cf584e4ef60";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ import namespace="System.Collections.Generic" #>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using MyBlog.Model;
+
+namespace MyBlog.BLL
+{
+<#
+	List<string> list = new List<string>()
+    {	   
+	  
+		"Blog",
+		"BlogType",
+		"Picture",
+		"Account",
+		"QQModel",
+		"Message",
+		"Image",
+		"WebSite",
+		"Folder"
+	
+
+    };
+	foreach (var Name in list)
+	{
+	
+
+#>
+		public partial class <#=Name#>BLL: BaseBLL<<#=Name#>>
+		{
+		}
+
+<#
+
+}
+#>
+
+}

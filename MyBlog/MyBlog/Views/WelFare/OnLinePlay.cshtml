@@ -1,0 +1,16 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html style="height: 100%;">
+<body style="height: 100%;text-align:center;">
+    <input type="text" id="url" style="width:450px;" placeholder="请输入磁力链...">
+    <input type="button" onclick="play.src='http://apiv.ga/magnet/'+gethash(url.value)" value="播放">
+    <input type="button" onclick="url.value='';play.src='';" value="清空">
+    <iframe id="play" style="width:100%;height:95%;" frameborder="0"></iframe>
+    <script>function gethash(mag){return mag.replace("magnet:?xt=urn:btih:","")};</script>
+</body>
+</html>

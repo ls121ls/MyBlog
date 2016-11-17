@@ -1,0 +1,61 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ import namespace="System.Collections.Generic" #>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace MyBlog.BLL
+{
+    public partial class ServiceRepository
+    {
+	
+<#
+	List<string> list = new List<string>()
+    {	   
+	  
+		"Blog",
+		"BlogType",
+		"Picture",
+		"Account",
+		"QQModel",
+		"Message",
+		"Image",
+		"WebSite",
+		"Folder"
+	
+
+    };
+
+	
+
+	
+	foreach (var Name in list)
+	{
+	
+
+#>
+        private <#=Name#>BLL _<#=Name#>BLL;
+        public <#=Name#>BLL <#=Name#>BLL
+        {
+            get
+            {
+                if (_<#=Name#>BLL == null)
+                {
+                    _<#=Name#>BLL = new <#=Name#>BLL();
+                }
+                return _<#=Name#>BLL;
+            }
+            set { _<#=Name#>BLL = value; }
+        }
+
+<#
+
+}
+#>
+
+
+	}
+}
