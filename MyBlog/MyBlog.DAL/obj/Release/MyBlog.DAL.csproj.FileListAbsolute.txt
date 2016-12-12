@@ -11,3 +11,7 @@ F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Release\zh-Hans\EntityFramework.Sq
 F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Release\MyBlog.DAL.csprojResolveAssemblyReference.cache
 F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Release\MyBlog.DAL.dll
 F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Release\MyBlog.DAL.pdb
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Release\MyBlog.DAL.Migrations.InitialCreate.resources
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Release\MyBlog.DAL.Migrations.InitialCreate1.resources
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Release\MyBlog.DAL.Migrations.InitialCreate2.resources
+F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\obj\Release\MyBlog.DAL.csproj.GenerateResource.Cache

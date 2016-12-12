@@ -31,7 +31,7 @@ namespace MyBlog.BLL
 		{
 		}
 
-		public partial class ImageBLL: BaseBLL<Image>
+		public partial class ImageModelBLL: BaseBLL<ImageModel>
 		{
 		}
 

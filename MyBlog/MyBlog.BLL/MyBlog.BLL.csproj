@@ -80,10 +80,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="BLLExt.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>BLLExt.cs</LastGenOutput>

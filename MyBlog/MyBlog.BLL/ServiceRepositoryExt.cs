@@ -93,18 +93,18 @@ namespace MyBlog.BLL
             set { _MessageBLL = value; }
         }
 
-        private ImageBLL _ImageBLL;
-        public ImageBLL ImageBLL
+        private ImageModelBLL _ImageModelBLL;
+        public ImageModelBLL ImageModelBLL
         {
             get
             {
-                if (_ImageBLL == null)
+                if (_ImageModelBLL == null)
                 {
-                    _ImageBLL = new ImageBLL();
+                    _ImageModelBLL = new ImageModelBLL();
                 }
-                return _ImageBLL;
+                return _ImageModelBLL;
             }
-            set { _ImageBLL = value; }
+            set { _ImageModelBLL = value; }
         }
 
         private WebSiteBLL _WebSiteBLL;

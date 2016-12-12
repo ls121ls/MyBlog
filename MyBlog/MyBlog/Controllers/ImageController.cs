@@ -13,7 +13,7 @@ namespace MyBlog.Controllers
         public ActionResult Index(int folderId)
         {
             int count;
-            ViewBag.Images = service.ImageBLL.LoadPageEntities(d=>d.Src!=""&&d.FolderId==folderId,d=>d.ImageId , 8, 1,out count, true);
+            ViewBag.Images = service.ImageModelBLL.LoadPageEntities(d=>d.Src!=""&&d.FolderId==folderId,d=>d.ImageModelId , 8, 1,out count, true);
             ViewBag.Count = count;
             return View();
         }
@@ -21,7 +21,7 @@ namespace MyBlog.Controllers
         public JsonResult GetMoreImages(int pageIndex)
         {
             int count;
-            var data = service.ImageBLL.LoadPageEntities(d => d.Src != "", d => d.ImageId, 8, pageIndex, out count, true);
+            var data = service.ImageModelBLL.LoadPageEntities(d => d.Src != "", d => d.ImageModelId, 8, pageIndex, out count, true);
             return Json(data, JsonRequestBehavior.AllowGet);
         }
     }

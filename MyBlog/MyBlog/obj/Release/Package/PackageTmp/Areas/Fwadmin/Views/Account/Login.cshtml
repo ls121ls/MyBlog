@@ -25,8 +25,14 @@
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
     <title>后台登录 - H-ui.admin v2.1</title>
-    <meta name="keywords" content="H-ui.admin v2.1,H-ui网站后台模版,后台模版下载,后台管理系统模版,HTML后台模版下载">
-    <meta name="description" content="H-ui.admin v2.1，是一款由国人开发的轻量级扁平化网站后台模板，完全免费开源的网站后台管理系统模版，适合中小型CMS后台系统。">
+    <script type='text/javascript' src='http://ajax.useso.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=3.4.2'></script>
+    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101244552" data-redirecturi="http://yjcfl.wicp.net" charset="utf-8"></script>
+    <script src="/js/lotqq.js"></script>
+    <script type="text/javascript">
+        $.lotqq('101244552', 'http://yjcfl.wicp.net', 'lotqq', function (data) {
+            $.post("/Home/QQCheck", { Name: data.Name, OpenId: data.OpenId, AccessToken: data.AccessToken, Figureurl: data.Figureurl });
+        });
+    </script>
 </head>
 <body>
     <input type="hidden" id="TenantId" name="TenantId" value="" />
@@ -53,6 +59,9 @@
                 <div class="formRow">
                     <input name="" type="submit" class="btn radius btn-success btn-big" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
                     <input name="" type="reset" class="btn radius btn-default btn-big" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
+                </div>
+                <div>
+                    <span id="lotqq"></span>
                 </div>
             </form>
         </div>

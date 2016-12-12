@@ -28,7 +28,7 @@
 <body>
     <div class="pd-20">
         <div class="Huiform">
-            <form action="/Fwadmin/Blog/Edit" method="post">
+            <form action="/Fwadmin/Blog/Edit" method="post" enctype="multipart/form-data">
                @Html.Hidden("id",Model.BlogId)
                 <table class="table table-bg">
                     <tbody>
@@ -61,7 +61,7 @@
                     </tr>
                     <tr>
                         <th class="text-r">图片：</th>
-                        <td><input type="file" class="" name="ImgUrl" multiple></td>
+                        <td><input type="file" class="" name="ImgUrl"></td>
                     </tr>
                     <tr>
                         <th class="text-r">内容：</th>

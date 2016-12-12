@@ -1,0 +1,20 @@
+﻿<div class="news">
+    <h3>
+        <p>栏目<span>推荐</span></p>
+    </h3>
+    <ul class="rank">
+        @foreach (Blog blog in ViewBag.RecommendBlogs)
+        {
+            <li><a href="/Blog/Detail/@blog.BlogId" title="@blog.Title" target="_blank">@blog.Title</a></li>
+        }
+    </ul>
+    <h3 class="ph">
+        <p>点击<span>排行</span></p>
+    </h3>
+    <ul class="paih">
+        @foreach (Blog blog in ViewBag.ClickBlogs)
+        {
+            <li><a href="/Blog/Detail/@blog.BlogId" title="@blog.Title" target="_blank">@blog.Title</a></li>
+        }
+    </ul>
+</div>

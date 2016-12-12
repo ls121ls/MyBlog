@@ -1,4 +1,4 @@
-/*H-ui.admin.js v2.0 date:15:42 2014-11-24 by:guojunhui*/
+﻿/*H-ui.admin.js v2.0 date:15:42 2014-11-24 by:guojunhui*/
 /*获取顶部选项卡总长度*/
 function tabNavallwidth(){
 	var taballwidth=0,
@@ -166,9 +166,14 @@ function article_fabu(obj,id){
 }
 /*管理员-删除*/
 function article_del(obj,id){
-	layer.confirm('确认要删除吗？',function(index){
-		$(obj).parents("tr").remove();
-		layer.msg('已删除!',1);
+    layer.confirm('确认要删除吗？', function (index) {
+        $.post("/Fwadmin/Blog/Delete", { id: id }, function (data) {
+            if (data == 1) {
+                location.replace(location.href);
+            }
+        });
+//		$(obj).parents("tr").remove();
+//		layer.msg('已删除!',1);
 	});
 }
 /*------------图片库--------------*/

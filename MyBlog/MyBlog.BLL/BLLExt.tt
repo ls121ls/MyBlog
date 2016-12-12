@@ -20,7 +20,7 @@ namespace MyBlog.BLL
 		"Account",
 		"QQModel",
 		"Message",
-		"Image",
+		"ImageModel",
 		"WebSite",
 		"Folder"
 	

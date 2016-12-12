@@ -1,26 +1,10 @@
 ﻿@using Common
-@{
-    Layout = null;
-}
-<!doctype html>
-<html>
-<head>
-    <meta charset="gb2312">
-    <title>个人博客模板（寻梦）</title>
-    <meta name="keywords" content="个人博客模板,博客模板" />
-    <meta name="description" content="寻梦主题的个人博客模板，优雅、稳重、大气,低调。" />
-    <link href="/css/base.css" rel="stylesheet">
-    <link href="/css/index.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/modernizr.js"></script>
-    <![endif]-->
-</head>
-<body>
-    <header>
-        <div id="logo"><a href="/"></a></div>
-        <nav class="topnav" id="topnav"><a href="index.html"><span>首页</span><span class="en">Protal</span></a><a href="about.html"><span>关于我</span><span class="en">About</span></a><a href="newlist.html"><span>慢生活</span><span class="en">Life</span></a><a href="moodlist.html"><span>碎言碎语</span><span class="en">Doing</span></a><a href="share.html"><span>模板分享</span><span class="en">Share</span></a><a href="knowledge.html"><span>学无止境</span><span class="en">Learn</span></a><a href="book.html"><span>留言版</span><span class="en">Gustbook</span></a></nav>
-        </nav>
-    </header>
+<script type="text/javascript" src="/js/snow.js"></script>
+
+
+<link href="/css/index.css" rel="stylesheet">
+
+<div style=" color:#FFFFFF">
     <div class="banner">
         <section class="box">
             <ul class="texts">
@@ -28,24 +12,28 @@
                 <p>为自己掘一个坟墓来葬心，红尘一梦，不再追寻。</p>
                 <p>加了锁的青春，不会再因谁而推开心门。</p>
             </ul>
-            <div class="avatar"><a href="#"><span>云深不知处</span></a> </div>
+            <div class="avatar">
+                <a href="#"><span>云深不知处</span></a>
+            </div>
         </section>
     </div>
-@*    <div class="template">*@
-@*        <div class="box">*@
-@*            <h3>*@
-@*                <p><span>个人博客</span>模板 Templates</p>*@
-@*            </h3>*@
-@*            <ul>*@
-@*                <li><a href="/" target="_blank"><img src="images/01.jpg"></a><span>仿新浪博客风格·梅——古典个人博客模板</span></li>*@
-@*                <li><a href="/" target="_blank"><img src="images/02.jpg"></a><span>黑色质感时间轴html5个人博客模板</span></li>*@
-@*                <li><a href="/" target="_blank"><img src="images/03.jpg"></a><span>Green绿色小清新的夏天-个人博客模板</span></li>*@
-@*                <li><a href="/" target="_blank"><img src="images/04.jpg"></a><span>女生清新个人博客网站模板</span></li>*@
-@*                <li><a href="/" target="_blank"><img src="images/02.jpg"></a><span>黑色质感时间轴html5个人博客模板</span></li>*@
-@*                <li><a href="/" target="_blank"><img src="images/03.jpg"></a><span>Green绿色小清新的夏天-个人博客模板</span></li>*@
-@*            </ul>*@
-@*        </div>*@
-@*    </div>*@
+
+</div>
+    @*    <div class="template">*@
+    @*        <div class="box">*@
+    @*            <h3>*@
+    @*                <p><span>个人博客</span>模板 Templates</p>*@
+    @*            </h3>*@
+    @*            <ul>*@
+    @*                <li><a href="/" target="_blank"><img src="images/01.jpg"></a><span>仿新浪博客风格·梅——古典个人博客模板</span></li>*@
+    @*                <li><a href="/" target="_blank"><img src="images/02.jpg"></a><span>黑色质感时间轴html5个人博客模板</span></li>*@
+    @*                <li><a href="/" target="_blank"><img src="images/03.jpg"></a><span>Green绿色小清新的夏天-个人博客模板</span></li>*@
+    @*                <li><a href="/" target="_blank"><img src="images/04.jpg"></a><span>女生清新个人博客网站模板</span></li>*@
+    @*                <li><a href="/" target="_blank"><img src="images/02.jpg"></a><span>黑色质感时间轴html5个人博客模板</span></li>*@
+    @*                <li><a href="/" target="_blank"><img src="images/03.jpg"></a><span>Green绿色小清新的夏天-个人博客模板</span></li>*@
+    @*            </ul>*@
+    @*        </div>*@
+    @*    </div>*@
     <article>
         <h2 class="title_tj">
             <p><span>最新</span>文章</p>
@@ -54,12 +42,12 @@
             @foreach (Blog blog in ViewBag.NewBlogs)
             {
                 <h3>@blog.Title</h3>
-                <figure><img src="images/001.png"></figure>
+                <figure><img src="@blog.ImgUrl" onerror="this.src='/images/001.png'"></figure>
                 <ul>
-                    <p>@blog.Content.ShortString(20,false)</p>
+                    <p>@blog.Content.ShortString(120)</p>
                     <a title="@blog.Title" href="/Blog/Detail/@blog.BlogId" target="_blank" class="readmore">阅读全文>></a>
                 </ul>
-                <p class="dateview"><span>@blog.CreateDate</span><span>作者：@blog.Author</span><span>个人博客：[<a href="/news/life/">@blog.BlogType.Value</a>]</span></p>
+                <p class="dateview"><span>@blog.CreateDate</span><span>作者：@blog.Author</span><span>博客分类：[<a href="/news/life/">@blog.BlogType.Value</a>]</span></p>
 
 
             }
@@ -68,7 +56,7 @@
             <div class="weather">
                 <label id="label1"></label>
                 <label id="label2"></label>
-                <br/>
+                <br />
                 <label id="label3"></label>
             </div>
             <div class="news">
@@ -78,7 +66,7 @@
                 <ul class="rank">
                     @foreach (Blog blog in ViewBag.RecommendBlogs)
                     {
-                        <li><a href="/Blog/Detail/@blog.BlogId" title="@blog.Title" target="_blank">@blog.Title</a></li>
+                        <li><a href="/Blog/Detail/@blog.BlogId" title="@blog.Title">@blog.Title</a></li>
                     }
                 </ul>
                 <h3 class="ph">
@@ -87,17 +75,17 @@
                 <ul class="paih">
                     @foreach (Blog blog in ViewBag.ClickBlogs)
                     {
-                        <li><a href="/Blog/Detail/@blog.BlogId" title="@blog.Title" target="_blank">@blog.Title</a></li>
+                        <li><a href="/Blog/Detail/@blog.BlogId" title="@blog.Title">@blog.Title</a></li>
                     }
                 </ul>
                 <h3 class="links">
                     <p>友情<span>链接</span></p>
                 </h3>
                 <ul class="website">
-                    <li><a href="/">个人博客</a></li>
-                    <li><a href="/">谢泽文个人博客</a></li>
-                    <li><a href="/">3DST技术网</a></li>
-                    <li><a href="/">思衡网络</a></li>
+                    <li><a href="http://www.cnblogs.com/sharing1986687846/" target="_blank">sharing个人博客</a></li>
+                    <li><a href="/" target="_blank">个人博客</a></li>
+                    <li><a href="/" target="_blank">波霸38</a></li>
+                    <li><a href="/" target="_blank">网络空间</a></li>
                 </ul>
             </div>
             <!-- Baidu Button BEGIN -->
@@ -105,48 +93,41 @@
             <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6574585"></script>
             <script type="text/javascript" id="bdshell_js"></script>
             <script type="text/javascript">
-                document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+                document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000)
             </script>
             <!-- Baidu Button END -->
             <a href="/" class="weixin"> </a>
         </aside>
     </article>
-    <footer>
-@*        <p>Design by DanceSmile <a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备11002373号-1</a> <a href="/">网站统计</a></p>*@
-    </footer>
-<script src="/js/silder.js"></script>
-    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
-<script type="text/javascript">
+    <script type="text/javascript">
 
-    $(function () {
-        var city;
-        $.getScript("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js", function () {
-            console.log(remote_ip_info);
-            city = remote_ip_info.city;
-            district = remote_ip_info.district;
-            $.getJSON("/Home/GetFromBd", { city: city }, function (data) {
-                var json = strToJson(data);
-                var p = json.results[0];
-                var temp = p.weather_data[0];
-                var dd = (temp.date).substring(0, 9);
-                var tt = (temp.date).substring(11, temp.date.length - 1);
-                $("#label1").html(dd);
-                $("#label2").html(tt);
-                $("#label3").html(temp.temperature);
-                $("#label4").html(temp.weather);
-                var temp2 = p.weather_data[1];
-                $("#label11").html(temp2.date);
-                $("#label12").html(temp2.temperature);
-                $("#label13").html(temp2.weather);
-                $("#label14").html(city);
+        $(function () {
+            var city;
+            $.getScript("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js", function () {
+                console.log(remote_ip_info);
+                city = remote_ip_info.city;
+                district = remote_ip_info.district;
+                $.getJSON("/Home/GetFromBd", { city: city }, function (data) {
+                    var json = strToJson(data);
+                    var p = json.results[0];
+                    var temp = p.weather_data[0];
+                    var dd = (temp.date).substring(0, 9);
+                    var tt = (temp.date).substring(11, temp.date.length - 1);
+                    $("#label1").html(dd);
+                    $("#label2").html(tt);
+                    $("#label3").html(temp.temperature);
+                    $("#label4").html(temp.weather);
+                    var temp2 = p.weather_data[1];
+                    $("#label11").html(temp2.date);
+                    $("#label12").html(temp2.temperature);
+                    $("#label13").html(temp2.weather);
+                    $("#label14").html(city);
+                });
             });
         });
-    });
 
-    function strToJson(str) {
-        var json = eval('(' + str + ')');
-        return json;
-    }
-</script>
-</body>
-</html>
+        function strToJson(str) {
+            var json = eval('(' + str + ')');
+            return json;
+        }
+    </script>

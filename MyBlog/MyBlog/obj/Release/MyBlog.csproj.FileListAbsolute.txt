@@ -95,3 +95,7 @@ F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Security.Micros
 F:\项目\我的\MyBlog\MyBlog\MyBlog\obj\Release\MyBlog.csprojResolveAssemblyReference.cache
 F:\项目\我的\MyBlog\MyBlog\MyBlog\obj\Release\MyBlog.dll
 F:\项目\我的\MyBlog\MyBlog\MyBlog\obj\Release\MyBlog.pdb
+F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Exceptionless.dll
+F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Exceptionless.Mvc.dll
+F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Exceptionless.xml
+F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Exceptionless.Mvc.xml

@@ -54,7 +54,7 @@ namespace MyBlog.BLL
             return db.Blogs.Where(d => d.IsActive).OrderByDescending(d => d.ClickCount).Take(8).ToList();
         }
 
-        public void AddClickCount(int id)
+        public void AddClickCount(long id)
         {
             db.Blogs.SqlQuery("update Blog set ClickCount=ClickCount+1 where BlogId=" + id);
             db.SaveChanges();

@@ -16,9 +16,11 @@ namespace MyBlog.DAL
         //如果您想要针对其他数据库和/或数据库提供程序，请在应用程序配置文件中修改“MyBlogModel”
         //连接字符串。
         public MyBlogModel()
-            : base("name=MyBlogModel")
+            //: base("name=MyBlogModel")
+            : base("name=BlogModel")
         {
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MyBlogModel>());
+            Database.SetInitializer<MyBlogModel>(null);
+            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MyBlogModel>());
         }
 
         //为您要在模型中包含的每种实体类型都添加 DbSet。有关配置和使用 Code First  模型
@@ -29,7 +31,7 @@ namespace MyBlog.DAL
         public DbSet<Picture> Pictures { get; set; }
         public DbSet<Account> Accounts { get; set; }
         public DbSet<QQModel> QQModels { get; set; }
-        public DbSet<Image> Images { get; set; }
+        public DbSet<ImageModel> ImageModels { get; set; }
         public DbSet<WebSite> WebSites { get; set; }
         public DbSet<Folder> Folders { get; set; }
     }
