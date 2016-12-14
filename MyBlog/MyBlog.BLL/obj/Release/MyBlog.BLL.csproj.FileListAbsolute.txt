@@ -1,4 +1,3 @@
-F:\项目\我的\MyBlog\MyBlog\MyBlog.BLL\bin\Release\MyBlog.BLL.dll.config
 F:\项目\我的\MyBlog\MyBlog\MyBlog.BLL\bin\Release\MyBlog.BLL.dll
 F:\项目\我的\MyBlog\MyBlog\MyBlog.BLL\bin\Release\MyBlog.BLL.pdb
 F:\项目\我的\MyBlog\MyBlog\MyBlog.BLL\bin\Release\Common.dll

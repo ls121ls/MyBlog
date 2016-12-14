@@ -1,210 +1,112 @@
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\roslyn\csc.exe
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\roslyn\Microsoft.CodeAnalysis.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\roslyn\Microsoft.CSharp.Core.targets
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\roslyn\Microsoft.VisualBasic.Core.targets
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\roslyn\System.Collections.Immutable.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\roslyn\System.Reflection.Metadata.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\roslyn\vbc.exe
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\roslyn\VBCSCompiler.exe
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\roslyn\VBCSCompiler.exe.config
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\MyBlog.dll.config
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\MyBlog.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\MyBlog.pdb
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Antlr3.Runtime.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\EntityFramework.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\EntityFramework.SqlServer.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.AspNet.Identity.Core.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.AspNet.Identity.Owin.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Host.SystemWeb.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Cookies.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Facebook.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Google.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.OAuth.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Twitter.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Web.Infrastructure.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Newtonsoft.Json.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Owin.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.Helpers.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.Mvc.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.Optimization.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.Razor.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.WebPages.Deployment.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.WebPages.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.WebPages.Razor.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\WebGrease.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.Helpers.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.Mvc.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.Optimization.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.Razor.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.WebPages.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.WebPages.Deployment.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Web.WebPages.Razor.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Antlr3.Runtime.pdb
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Newtonsoft.Json.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\EntityFramework.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\EntityFramework.SqlServer.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.AspNet.Identity.Core.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.AspNet.Identity.Owin.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Host.SystemWeb.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Facebook.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Cookies.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.OAuth.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Google.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Twitter.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.csprojResolveAssemblyReference.cache
-F:\项目\我的\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\obj\Debug\MyBlog.pdb
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Common.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Common.pdb
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\System.Web.Helpers.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\System.Web.Mvc.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\System.Web.Optimization.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\System.Web.Razor.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\System.Web.WebPages.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\EntityFramework.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\Microsoft.AspNet.Identity.Owin.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\Microsoft.AspNet.Identity.EntityFramework.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Security.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Security.Facebook.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Newtonsoft.Json.pdb
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Exceptionless.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Exceptionless.Mvc.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Exceptionless.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\Exceptionless.Mvc.xml
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Data.SQLite.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Data.SQLite.EF6.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Data.SQLite.Linq.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\System.Data.SQLite.xml
-F:\MyBlog\MyBlog\bin\roslyn\csc.exe
-F:\MyBlog\MyBlog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-F:\MyBlog\MyBlog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-F:\MyBlog\MyBlog\bin\roslyn\Microsoft.CodeAnalysis.dll
-F:\MyBlog\MyBlog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-F:\MyBlog\MyBlog\bin\roslyn\Microsoft.CSharp.Core.targets
-F:\MyBlog\MyBlog\bin\roslyn\Microsoft.VisualBasic.Core.targets
-F:\MyBlog\MyBlog\bin\roslyn\System.Collections.Immutable.dll
-F:\MyBlog\MyBlog\bin\roslyn\System.Reflection.Metadata.dll
-F:\MyBlog\MyBlog\bin\roslyn\vbc.exe
-F:\MyBlog\MyBlog\bin\roslyn\VBCSCompiler.exe
-F:\MyBlog\MyBlog\bin\roslyn\VBCSCompiler.exe.config
-F:\MyBlog\MyBlog\bin\MyBlog.dll.config
-F:\MyBlog\MyBlog\bin\MyBlog.dll
-F:\MyBlog\MyBlog\bin\MyBlog.pdb
-F:\MyBlog\MyBlog\bin\Antlr3.Runtime.dll
-F:\MyBlog\MyBlog\bin\Common.dll
-F:\MyBlog\MyBlog\bin\EntityFramework.dll
-F:\MyBlog\MyBlog\bin\EntityFramework.SqlServer.dll
-F:\MyBlog\MyBlog\bin\Exceptionless.dll
-F:\MyBlog\MyBlog\bin\Exceptionless.Mvc.dll
-F:\MyBlog\MyBlog\bin\Microsoft.AspNet.Identity.Core.dll
-F:\MyBlog\MyBlog\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-F:\MyBlog\MyBlog\bin\Microsoft.AspNet.Identity.Owin.dll
-F:\MyBlog\MyBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.dll
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Host.SystemWeb.dll
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Cookies.dll
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.dll
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Facebook.dll
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Google.dll
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.OAuth.dll
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Twitter.dll
-F:\MyBlog\MyBlog\bin\Microsoft.Web.Infrastructure.dll
-F:\MyBlog\MyBlog\bin\MyBlog.BLL.dll
-F:\MyBlog\MyBlog\bin\MyBlog.Model.dll
-F:\MyBlog\MyBlog\bin\Newtonsoft.Json.dll
-F:\MyBlog\MyBlog\bin\Owin.dll
-F:\MyBlog\MyBlog\bin\System.Data.SQLite.dll
-F:\MyBlog\MyBlog\bin\System.Data.SQLite.EF6.dll
-F:\MyBlog\MyBlog\bin\System.Data.SQLite.Linq.dll
-F:\MyBlog\MyBlog\bin\System.Web.Helpers.dll
-F:\MyBlog\MyBlog\bin\System.Web.Mvc.dll
-F:\MyBlog\MyBlog\bin\System.Web.Optimization.dll
-F:\MyBlog\MyBlog\bin\System.Web.Razor.dll
-F:\MyBlog\MyBlog\bin\System.Web.WebPages.Deployment.dll
-F:\MyBlog\MyBlog\bin\System.Web.WebPages.dll
-F:\MyBlog\MyBlog\bin\System.Web.WebPages.Razor.dll
-F:\MyBlog\MyBlog\bin\WebGrease.dll
-F:\MyBlog\MyBlog\bin\MyBlog.DAL.dll
-F:\MyBlog\MyBlog\bin\Common.pdb
-F:\MyBlog\MyBlog\bin\MyBlog.BLL.pdb
-F:\MyBlog\MyBlog\bin\MyBlog.Model.pdb
-F:\MyBlog\MyBlog\bin\Exceptionless.xml
-F:\MyBlog\MyBlog\bin\Exceptionless.Mvc.xml
-F:\MyBlog\MyBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\MyBlog\MyBlog\bin\System.Data.SQLite.xml
-F:\MyBlog\MyBlog\bin\System.Web.Helpers.xml
-F:\MyBlog\MyBlog\bin\System.Web.Mvc.xml
-F:\MyBlog\MyBlog\bin\System.Web.Optimization.xml
-F:\MyBlog\MyBlog\bin\System.Web.Razor.xml
-F:\MyBlog\MyBlog\bin\System.Web.WebPages.xml
-F:\MyBlog\MyBlog\bin\System.Web.WebPages.Deployment.xml
-F:\MyBlog\MyBlog\bin\System.Web.WebPages.Razor.xml
-F:\MyBlog\MyBlog\bin\Antlr3.Runtime.pdb
-F:\MyBlog\MyBlog\bin\Newtonsoft.Json.pdb
-F:\MyBlog\MyBlog\bin\Newtonsoft.Json.xml
-F:\MyBlog\MyBlog\bin\EntityFramework.xml
-F:\MyBlog\MyBlog\bin\EntityFramework.SqlServer.xml
-F:\MyBlog\MyBlog\bin\Microsoft.AspNet.Identity.Core.xml
-F:\MyBlog\MyBlog\bin\Microsoft.AspNet.Identity.Owin.xml
-F:\MyBlog\MyBlog\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.xml
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Host.SystemWeb.xml
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.xml
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Facebook.xml
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Cookies.xml
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.OAuth.xml
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Google.xml
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.Twitter.xml
-F:\MyBlog\MyBlog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-F:\MyBlog\MyBlog\bin\MyBlog.DAL.pdb
-F:\MyBlog\MyBlog\bin\zh-Hans\System.Web.Helpers.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\System.Web.Mvc.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\System.Web.Optimization.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\System.Web.Razor.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\System.Web.WebPages.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\EntityFramework.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\Microsoft.AspNet.Identity.Owin.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\Microsoft.AspNet.Identity.EntityFramework.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Security.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Security.Facebook.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
-F:\MyBlog\MyBlog\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-F:\MyBlog\MyBlog\obj\Debug\MyBlog.csprojResolveAssemblyReference.cache
-F:\MyBlog\MyBlog\obj\Debug\MyBlog.dll
-F:\MyBlog\MyBlog\obj\Debug\MyBlog.pdb
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\MyBlog.BLL.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\MyBlog.Model.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\MyBlog.DAL.dll
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\MyBlog.BLL.pdb
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\MyBlog.Model.pdb
-F:\项目\我的\MyBlog\MyBlog\MyBlog\bin\MyBlog.DAL.pdb
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\obj\Debug\MyBlog.csprojResolveAssemblyReference.cache
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\roslyn\csc.exe
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\roslyn\System.Collections.Immutable.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\roslyn\vbc.exe
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\roslyn\VBCSCompiler.exe
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\roslyn\VBCSCompiler.exe.config
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\MyBlog.dll.config
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\MyBlog.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\MyBlog.pdb
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\Microsoft.Web.Infrastructure.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\System.Web.Helpers.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\System.Web.Mvc.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\System.Web.Razor.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\System.Web.Webpages.Deployment.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\System.Web.Webpages.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\System.Web.Webpages.Razor.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\System.Web.Razor.xml
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\System.Web.Webpages.xml
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\System.Web.Webpages.Deployment.xml
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\System.Web.Webpages.Razor.xml
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\System.Web.Helpers.xml
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\System.Web.Mvc.xml
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\zh-Hans\System.Web.Razor.resources.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\zh-Hans\System.Web.Webpages.resources.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\zh-Hans\System.Web.Helpers.resources.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\zh-Hans\System.Web.Mvc.resources.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\obj\Debug\MyBlog.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\obj\Debug\MyBlog.pdb
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\Common.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\MyBlog.BLL.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\MyBlog.Model.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\MyBlog.DAL.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\EntityFramework.dll
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\Common.pdb
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\MyBlog.BLL.pdb
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\MyBlog.Model.pdb
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\MyBlog.DAL.pdb
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\EntityFramework.xml
+c:\users\wer\documents\visual studio 2015\Projects\MyBlog\MyBlog\bin\zh-Hans\EntityFramework.resources.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\obj\Debug\MyBlog.csprojResolveAssemblyReference.cache
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\obj\Debug\MyBlog.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\obj\Debug\MyBlog.pdb
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\roslyn\csc.exe
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\roslyn\System.Collections.Immutable.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\roslyn\System.Reflection.Metadata.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\roslyn\vbc.exe
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\roslyn\VBCSCompiler.exe
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\roslyn\VBCSCompiler.exe.config
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\MyBlog.dll.config
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\MyBlog.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\MyBlog.pdb
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\Common.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\Microsoft.Web.Infrastructure.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\MyBlog.BLL.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\MyBlog.Model.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Helpers.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Mvc.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Razor.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Webpages.Deployment.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Webpages.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Webpages.Razor.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\MyBlog.DAL.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\EntityFramework.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\Common.pdb
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\MyBlog.BLL.pdb
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\MyBlog.Model.pdb
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Razor.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Webpages.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Webpages.Deployment.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Webpages.Razor.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Helpers.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Mvc.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\MyBlog.DAL.pdb
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\EntityFramework.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\zh-Hans\System.Web.Razor.resources.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\zh-Hans\System.Web.Webpages.resources.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\zh-Hans\System.Web.Helpers.resources.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\zh-Hans\System.Web.Mvc.resources.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\EntityFramework.SqlServer.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Data.SQLite.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Data.SQLite.EF6.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Data.SQLite.Linq.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\EntityFramework.SqlServer.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Data.SQLite.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\Antlr3.Runtime.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\Newtonsoft.Json.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Optimization.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\WebGrease.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\Antlr3.Runtime.pdb
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\Newtonsoft.Json.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog\bin\System.Web.Optimization.xml

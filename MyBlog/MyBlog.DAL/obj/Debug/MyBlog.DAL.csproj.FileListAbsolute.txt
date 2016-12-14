@@ -32,3 +32,22 @@ F:\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.dll
 F:\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.pdb
 F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Debug\MyBlog.Model.dll
 F:\项目\我的\MyBlog\MyBlog\MyBlog.DAL\bin\Debug\MyBlog.Model.pdb
+C:\Users\wer\Documents\Visual Studio 2015\Projects\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.dll
+C:\Users\wer\Documents\Visual Studio 2015\Projects\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.pdb
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\MyBlog.DAL.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\MyBlog.DAL.pdb
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\EntityFramework.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\MyBlog.Model.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\System.Data.SQLite.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\System.Data.SQLite.EF6.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\System.Data.SQLite.Linq.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\MyBlog.Model.pdb
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\EntityFramework.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\System.Data.SQLite.xml
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.csprojResolveAssemblyReference.cache
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.dll
+F:\项目\我的\新建文件夹\MyBlog\MyBlog.DAL\obj\Debug\MyBlog.DAL.pdb

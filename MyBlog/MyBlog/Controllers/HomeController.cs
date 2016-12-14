@@ -100,5 +100,12 @@ namespace MyBlog.Controllers
             throw new Exception("test exception");
         }
 
+
+
+        public ActionResult Test()
+        {
+            return Content(System.AppDomain.CurrentDomain.BaseDirectory);
+        }
+
     }
 }
