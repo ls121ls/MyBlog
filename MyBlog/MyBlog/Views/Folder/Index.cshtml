@@ -1,0 +1,76 @@
+﻿<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="list-group">
+                @*@if (ViewBag.CategoryId == 0)
+                {
+                    <a href="@Url.Action("Index")" class="list-group-item active">
+                        &nbsp; <strong>全部直播</strong>
+                    </a>
+                }
+                else
+                {
+                    <a href="@Url.Action("Index")" class="list-group-item">
+                        &nbsp; <strong>全部直播</strong>
+                    </a>
+                }
+                @foreach (Category category in Model.Categories)
+                {
+                    if (ViewBag.CategoryId == category.CategoryId)
+                    {
+                        <a href="@Url.Action("Index", new { ids = category.CategoryId })" class="list-group-item active">&nbsp; <strong>@category.Name</strong></a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Index", new { ids = category.CategoryId })" class="list-group-item">&nbsp; <strong>@category.Name</strong></a>
+                    }
+                }*@
+            </div>
+
+        </div>
+        <div class="col-sm-9">
+            <div class="thumbnail">
+                <div class="row">
+                    @foreach (Folder folder in ViewBag.Folders)
+                    {
+                        <div class="col-xs-6 col-md-4">
+                            <div class="thumbnail">
+                                <a href="@Url.Action("Index", "Image", new { folderId = folder.FolderId })" target="_blank">
+                                    <img src="@folder.ImgUrl" alt="@folder.Name" />
+                                </a>
+                                <div style="height: 20px;">
+                                    @folder.Name
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                </div>
+            </div>
+            <nav>
+                <ul class="pagination" style="margin-top:5px">
+
+                    <li class="active"><a href="#"> <span>1 </span></a></li>
+                    <li><a href="#"> <span>2 </span></a></li>
+                    <li><a href="#"> <span>3 </span></a></li>
+                    <li><a href="#"> <span>4 </span></a></li>
+                    <li><a href="#"> <span>5 </span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+        $('img').attr("onerror","this.src='/Images/FolderDefault.jpg'");
+</script>
