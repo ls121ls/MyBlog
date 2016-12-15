@@ -7,7 +7,7 @@ using MyBlog.Model;
 
 namespace MyBlog.Areas.Fwadmin.Controllers
 {
-    public class BlogTypeController : AdminController
+    public class BlogTypeController : AdminBaseController
     {
         // GET: Fwadmin/BlogType
         public ActionResult Index()

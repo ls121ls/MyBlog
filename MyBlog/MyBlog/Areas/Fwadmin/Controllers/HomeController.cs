@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace MyBlog.Areas.Fwadmin.Controllers
 {
-    public class HomeController : AdminController
+    public class HomeController : AdminBaseController
     {
         // GET: Home
         public ActionResult Index()

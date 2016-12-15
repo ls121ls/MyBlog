@@ -396,14 +396,16 @@
     <Content Include="UEditor\ueditor.config.js" />
     <Content Include="UEditor\ueditor.parse.js" />
     <Content Include="UEditor\ueditor.parse.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Fwadmin\Controllers\AccountController.cs" />
-    <Compile Include="Areas\Fwadmin\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Fwadmin\Controllers\AdminBaseController.cs" />
     <Compile Include="Areas\Fwadmin\Controllers\BlogController.cs" />
     <Compile Include="Areas\Fwadmin\Controllers\BlogTypeController.cs" />
     <Compile Include="Areas\Fwadmin\Controllers\HomeController.cs" />
@@ -529,6 +531,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Fwadmin\Models\" />
+    <Folder Include="Areas\Fwadmin\Views\AdminBase\" />
     <Folder Include="Areas\Fwadmin\Views\Admin\" />
     <Folder Include="Content\" />
     <Folder Include="css\" />
