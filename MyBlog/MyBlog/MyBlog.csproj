@@ -522,6 +522,15 @@
     <Content Include="UEditor\third-party\vssver2.scc" />
     <Content Include="UEditor\third-party\webuploader\vssver2.scc" />
     <Content Include="UEditor\third-party\zeroclipboard\vssver2.scc" />
+    <Content Include="Views\Blog\Detail.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Folder\Index.cshtml" />
+    <Content Include="Views\Image\Index.cshtml" />
+    <Content Include="Views\Message\Index.cshtml" />
+    <Content Include="Views\Message\Levae.cshtml" />
+    <Content Include="Views\Tool\Index.cshtml" />
+    <Content Include="Views\WelFare\Index.cshtml" />
+    <Content Include="Views\WelFare\OnLinePlay.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
