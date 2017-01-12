@@ -23,16 +23,16 @@ namespace MyBlog.Areas.Fwadmin.Controllers
         protected override void Initialize(RequestContext requestContext)
         {
             base.Initialize(requestContext);
-            if (HttpContext.Session["CurrentAccount"] == null)
-            {
-                System.Web.HttpContext.Current.Response.Redirect("/Fwadmin/Account/Login");
-                System.Web.HttpContext.Current.Response.End();
-            }
-            else
-            {
-                Account account = service.AccountBLL.GetUserByLoginName(Session["CurrentAccount"].ToString());
-                CallContext.SetData("Account", account);
-            }
+            //if (HttpContext.Session["CurrentAccount"] == null)
+            //{
+            //    System.Web.HttpContext.Current.Response.Redirect("/Fwadmin/Account/Login");
+            //    System.Web.HttpContext.Current.Response.End();
+            //}
+            //else
+            //{
+            //    Account account = service.AccountBLL.GetUserByLoginName(Session["CurrentAccount"].ToString());
+            //    CallContext.SetData("Account", account);
+            //}
             if (System.Web.HttpContext.Current.Request.Cookies["username"] == null)
             {
                 WebSite webSiter = new WebSite();

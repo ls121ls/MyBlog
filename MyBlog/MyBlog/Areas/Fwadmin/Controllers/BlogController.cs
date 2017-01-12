@@ -20,6 +20,7 @@ namespace MyBlog.Areas.Fwadmin.Controllers
             ViewBag.Blogs = service.BlogBLL.LoadPageEntities(d => d.IsActive, o => o.BlogId, pageSize, pageInex,
                 out blogCount, true);
             ViewBag.BlogCount = blogCount;
+            ViewBag.BlogTypes = service.BlogTypeBLL.GetAllEntities().ToList();
             return View();
         }
 

@@ -28,8 +28,17 @@
         <div class="text-c">
             <select name="" class="select">
                 <option value="0">全部分类</option>
-                <option value="1">分类一</option>
-                <option value="2">分类二</option>
+                @{
+                    foreach (var blogType in ((List<BlogType>)ViewBag.BlogTypes).Where(d => d.ParentId == 0))
+                    {
+                        <option value="@blogType.BlogTypeId">├@blogType.Value</option>
+                        foreach (var bType in ((List<BlogType>)ViewBag.BlogTypes).Where(d => d.ParentId == blogType.BlogTypeId))
+                        {
+                            <option value="@bType.BlogTypeId">&nbsp;&nbsp;├ @bType.Value</option>
+
+                        }
+                    }
+                }
             </select> 日期范围：
             <input type="text" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'logmax\')||\'%y-%M-%d\'}'})" id="logmin" class="input-text Wdate" style="width:120px;">
             -

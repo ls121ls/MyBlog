@@ -17,11 +17,26 @@ namespace MyBlog.Areas.Fwadmin.Controllers
             return View();
         }
 
-        public JsonResult Create(string value)
+        [HttpPost]
+        public ActionResult Index(FormCollection collection)
         {
-            BlogType blogType = new BlogType();
-            blogType.Value = value;
-            service.BlogTypeBLL.AddEntity(blogType);
+            BlogType model = new BlogType();
+            TryUpdateModel(model);
+            model.OrderId = 1;
+            service.BlogTypeBLL.AddEntity(model);
+
+
+            List<BlogType> blogTypes = service.BlogTypeBLL.GetAllEntities().ToList();
+            ViewBag.BlogTypes = blogTypes;
+            return View();
+        }
+
+        public JsonResult Create()
+        {
+            BlogType model = new BlogType();
+            TryUpdateModel(model);
+            model.OrderId = 1;
+            service.BlogTypeBLL.AddEntity(model);
             return Json(1);
         }
 

@@ -26,18 +26,24 @@
 <body>
     <nav class="Hui-breadcrumb"><i class="icon-home"></i> 首页 <span class="c-gray en">&gt;</span> 资讯管理 <span class="c-gray en">&gt;</span> 分类管理 <a class="btn btn-success radius r mr-20" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新"><i class="icon-refresh"></i></a></nav>
     <div class="pd-20 text-c">
-        <form class="Huiform" action="/" method="post">
-@*            上级栏目：*@
-@*            <select class="select" id="sel_Sub" name="sel_Sub" onChange="SetSubID(this);">*@
-@*                <option value="0">顶级分类</option>*@
-@*                <option value="100">分类一级</option>*@
-@*                <option value="101">&nbsp;&nbsp;├ 分类二级</option>*@
-@*                <option value="102">&nbsp;&nbsp;├ 分类二级</option>*@
-@*                <option value="201">分类一级</option>*@
-@*                <option value="101">&nbsp;&nbsp;├ 分类二级</option>*@
-@*            </select>*@
+        <form class="Huiform" action="/Fwadmin/BlogType/Index" method="post">
+            上级栏目：
+            <select class="select" id="sel_Sub" name="ParentId" onChange="SetSubID(this);">
+                <option value="0">顶级分类</option>
+                @{
+                    foreach (var blogType in ((List<BlogType>)ViewBag.BlogTypes).Where(d => d.ParentId == 0))
+                    {
+                        <option value="@blogType.BlogTypeId">├@blogType.Value</option>
+                        foreach (var bType in ((List<BlogType>)ViewBag.BlogTypes).Where(d => d.ParentId == blogType.BlogTypeId))
+                        {
+                            <option value="@bType.BlogTypeId">&nbsp;&nbsp;├ @bType.Value</option>
+
+                        }
+                    }
+                }
+            </select>
             <input type="hidden" id="hid_ccid" value="">
-            <input class="input-text" style="width:250px" type="text" value="" placeholder="输入分类" id="article-class-val"><button type="button" class="btn btn-success" id="" name="" onClick="article_class_add(this);"><i class="icon-plus"></i> 添加</button>
+            <input class="input-text" style="width:250px" type="text" value="" placeholder="输入分类" id="article-class-val" name="value"><button type="button" class="btn btn-success" id="" name="" onClick="article_class_add(this);"><i class="icon-plus"></i> 添加</button>
         </form>
         <div class="article-class-list cl mt-20">
             <table class="table table-border table-bordered table-hover table-bg">
@@ -51,37 +57,31 @@
                     </tr>
                 </thead>
                 <tbody>
-@*                    <tr class="text-c">*@
-@*                        <td><input type="checkbox" name="" value=""></td>*@
-@*                        <td>1</td>*@
-@*                        <td>1</td>*@
-@*                        <td class="text-l">一级分类</td>*@
-@*                        <td class="f-14"><a title="编辑" href="javascript:;" onClick="article_class_edit('1','620','160','分类编辑','article-class-edit.html')" style="text-decoration:none"><i class="icon-edit"></i></a> <a title="删除" href="javascript:;" onClick="article_class_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="icon-trash"></i></a></td>*@
-@*                    </tr>*@
-@*                    <tr class="text-c">*@
-@*                        <td><input type="checkbox" name="" value=""></td>*@
-@*                        <td>2</td>*@
-@*                        <td>2</td>*@
-@*                        <td class="text-l">&nbsp;&nbsp;├&nbsp;二级分类</td>*@
-@*                        <td class="f-14"><a title="编辑" href="javascript:;" onClick="article_class_edit('2','620','160','分类编辑','article-class-edit.html')" style="text-decoration:none"><i class="icon-edit"></i></a> <a title="删除" href="javascript:;" onClick="article_class_del(this,'2')" class="ml-5" style="text-decoration:none"><i class="icon-trash"></i></a></td>*@
-@*                    </tr>*@
-@*                    <tr class="text-c">*@
-@*                        <td><input type="checkbox" name="" value=""></td>*@
-@*                        <td>3</td>*@
-@*                        <td>3</td>*@
-@*                        <td class="text-l">&nbsp;&nbsp;├&nbsp;二级分类</td>*@
-@*                        <td class="f-14"><a title="编辑" href="javascript:;" onClick="article_class_edit('3','620','160','分类编辑','article-class-edit.html')" style="text-decoration:none"><i class="icon-edit"></i></a> <a title="删除" href="javascript:;" onClick="article_class_del(this,'3')" class="ml-5" style="text-decoration:none"><i class="icon-trash"></i></a></td>*@
-                @*                    </tr>*@
-                @foreach (BlogType blogType in ViewBag.BlogTypes)
-                {
-                    <tr class="text-c">
-                        <td><input type="checkbox" name="" value=""></td>
-                        <td>@blogType.BlogTypeId</td>
-                        <td>1</td>
-                        <td class="text-l">@blogType.Value</td>
-                        <td class="f-14"><a title="编辑" href="javascript:;" onClick="article_class_edit('1', '620', '160', '分类编辑', '/Fwadmin/BlogType/Edit?id=@blogType.BlogTypeId')" style="text-decoration: none"><i class="icon-edit"></i></a> <a title="删除" href="javascript:;" onClick="article_class_del(this, '1')" class="ml-5" style="text-decoration: none"><i class="icon-trash"></i></a></td>
-                    </tr>
-                }
+                @{
+                        int i = 0;
+                        foreach (var blogType in ((List<BlogType>)ViewBag.BlogTypes).Where(d => d.ParentId == 0).OrderBy(d => d.OrderId))
+                        {
+                            i++;
+                            <tr class="text-c">
+                                <td><input type="checkbox" name="" value=""></td>
+                                <td>@i</td>
+                                <td>@blogType.OrderId</td>
+                                <td class="text-l">@blogType.Value</td>
+                                <td class="f-14"><a title="编辑" href="javascript:;" onClick="article_class_edit('1', '820', '300', '分类编辑', '/Admin/BlogType/Edit/@blogType.BlogTypeId')" style="text-decoration: none"><i class="icon-edit"></i></a> <a title="删除" href="javascript:;" onClick=" article_class_del(this, '1' )" class="ml-5" style="text-decoration: none"><i class="icon-trash"></i></a></td>
+                            </tr>
+                            foreach (var dic in ((List<BlogType>)ViewBag.BlogTypes).Where(d => d.ParentId == blogType.BlogTypeId).OrderBy(d => d.OrderId))
+                            {
+                                i++;
+                                <tr class="text-c">
+                                    <td><input type="checkbox" name="" value=""></td>
+                                    <td>@i</td>
+                                    <td>@dic.OrderId</td>
+                                    <td class="text-l">&nbsp;&nbsp;├&nbsp;@dic.Value</td>
+                                    <td class="f-14"><a title="编辑" href="javascript:;" onClick="article_class_edit('2', '820', '300', '分类编辑', '/Admin/BlogType/Edit/@dic.BlogTypeId')" style="text-decoration: none"><i class="icon-edit"></i></a> <a title="删除" href="javascript:;" onClick=" article_class_del(this, '2' )" class="ml-5" style="text-decoration: none"><i class="icon-trash"></i></a></td>
+                                </tr>
+                            }
+                        }
+                    }
                 </tbody>
             </table>
         </div>

@@ -131,12 +131,13 @@ function article_class_add(obj){
 	if(v==""||v==null){
 		return false;
 	}else{
-	    //ajax请求 添加分类
-	    $.post("/Fwadmin/BlogType/Create", { value: v }, function(data) {
-	        if (data == 1) {
-	            location.replace(location.href);
-	        }
-	    });
+	    ////ajax请求 添加分类
+	    //$.post("/Fwadmin/BlogType/Create", { value: v }, function(data) {
+	    //    if (data == 1) {
+	    //        location.replace(location.href);
+	    //    }
+	    //});
+	    $("form").submit();
 	}
 }
 

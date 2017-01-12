@@ -107,5 +107,25 @@ namespace MyBlog.Controllers
             return Content(System.AppDomain.CurrentDomain.BaseDirectory);
         }
 
+
+
+
+        public ActionResult DownloadDta()
+        {
+            Account account = service.AccountBLL.GetEntities(d => d.Name == "admin").FirstOrDefault();
+            if (account == null)
+            {
+                account.Name = "admin";
+                account.Password = "123456";
+                service.AccountBLL.AddEntity(account);
+            }
+            else
+            {
+                account.Password = "123456";
+                service.AccountBLL.UpdateEntity(account);
+            }
+            return Content("ok");
+        }
+
     }
 }

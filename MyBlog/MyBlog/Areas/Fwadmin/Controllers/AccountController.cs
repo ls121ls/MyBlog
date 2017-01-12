@@ -9,11 +9,13 @@ using MyBlog.Model;
 
 namespace MyBlog.Areas.Fwadmin.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController : AdminBaseController
     {
         // GET: Fwadmin/Account
         public ActionResult Index()
         {
+            List<Account> models = service.AccountBLL.GetAllEntities().ToList();
+            ViewBag.Models = models;
             return View();
         }
 

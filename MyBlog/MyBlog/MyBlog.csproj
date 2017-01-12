@@ -126,7 +126,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Filters\site-tongji.htm" />
     <Content Include="Global.asax" />
+    <Content Include="js\css3-mediaqueries.js" />
+    <Content Include="js\DD_belatedPNG_0.0.8a-min.js" />
+    <Content Include="js\de_DE.txt" />
+    <Content Include="js\dropzone.min.js" />
+    <Content Include="js\H-ui.admin.js" />
+    <Content Include="js\H-ui.js" />
+    <Content Include="js\html5.js" />
+    <Content Include="js\jQeasing.js" />
+    <Content Include="js\jquery-1.8.3.min.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.dataTables.min.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.masonry.min.js" />
+    <Content Include="js\jquery.min.1.8.1.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.SuperSlide.2.1.1.js" />
+    <Content Include="js\jQueryColor.js" />
+    <Content Include="js\lotqq.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\pagenav.cn.js" />
+    <Content Include="js\passwordStrength-min.js" />
+    <Content Include="js\PIE_IE678.js" />
+    <Content Include="js\preview.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="js\silder.js" />
+    <Content Include="js\snow.js" />
+    <Content Include="js\Validform_v5.3.2_min.js" />
     <Content Include="UEditor\dialogs\anchor\anchor.html" />
     <Content Include="UEditor\dialogs\attachment\attachment.css" />
     <Content Include="UEditor\dialogs\attachment\attachment.html" />
@@ -404,6 +432,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Filters\SiteStatModule.cs" />
     <Compile Include="Areas\Fwadmin\Controllers\AccountController.cs" />
     <Compile Include="Areas\Fwadmin\Controllers\AdminBaseController.cs" />
     <Compile Include="Areas\Fwadmin\Controllers\BlogController.cs" />
@@ -411,6 +440,7 @@
     <Compile Include="Areas\Fwadmin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Fwadmin\FwadminAreaRegistration.cs" />
     <Compile Include="Common\Basic.cs" />
+    <Compile Include="Common\CurrentAccount.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\FolderController.cs" />
@@ -420,6 +450,8 @@
     <Compile Include="Controllers\ToolController.cs" />
     <Compile Include="Controllers\WelFareController.cs" />
     <Compile Include="Filters\PermissionValidateAttribute.cs" />
+    <Compile Include="Filters\AbstractHttpResponseFilter.cs" />
+    <Compile Include="Filters\SiteStatResponseFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -531,6 +563,7 @@
     <Content Include="Views\Tool\Index.cshtml" />
     <Content Include="Views\WelFare\Index.cshtml" />
     <Content Include="Views\WelFare\OnLinePlay.cshtml" />
+    <Content Include="Areas\Fwadmin\Views\Account\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -547,7 +580,6 @@
     <Folder Include="fonts\" />
     <Folder Include="font\" />
     <Folder Include="images\" />
-    <Folder Include="js\" />
     <Folder Include="layer\" />
     <Folder Include="Models\" />
     <Folder Include="plugin\" />
