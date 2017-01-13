@@ -26,8 +26,7 @@ namespace MyBlog.Areas.Fwadmin.Controllers
 
         public ActionResult Create()
         {
-            List<BlogType> blogTypes = service.BlogTypeBLL.GetAllEntities().ToList();
-            ViewBag.BlogTypes = new SelectList(blogTypes, "BlogTypeId", "Value");
+            ViewBag.BlogTypes = service.BlogTypeBLL.GetAllEntities().ToList();
             return PartialView();
         }
 

@@ -1,4 +1,5 @@
-﻿@model BlogType
+﻿@using MyBlog.Expand
+@model BlogType
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -16,7 +17,7 @@
     <!--[if IE 7]>
     <link href="font/font-awesome-ie7.min.css" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <title>添加博客</title>
+    <title>添加博客分类</title>
 
 </head>
 <body>
@@ -26,6 +27,12 @@
                 <table class="table table-bg">
                     <tbody>
                     @Html.Hidden("BlogTypeId", Model.BlogTypeId)
+                        <tr>
+                            <th width="100" class="text-r"><span class="c-red">*</span> 上级栏目：</th>
+                            <td>
+                                @Html.Raw(Html.GetBlogTypes("ParentId",Model.BlogTypeId))
+                            </td>
+                        </tr>
                     <tr>
                         <th width="100" class="text-r"><span class="c-red">*</span> 分类名称：</th>
                         <td><input type="text" style="width: 200px" class="input-text" placeholder="" value="@Model.Value" id="value" name="value" datatype="*2-16" nullmsg="标题不能为空">

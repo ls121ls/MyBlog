@@ -10,10 +10,9 @@ namespace MyBlog.Areas.Fwadmin.Controllers
     public class BlogTypeController : AdminBaseController
     {
         // GET: Fwadmin/BlogType
-        public ActionResult Index()
+        public ActionResult Index(int id=0)
         {
-            List<BlogType> blogTypes = service.BlogTypeBLL.GetAllEntities().ToList();
-            ViewBag.BlogTypes = blogTypes;
+            ViewBag.BlogTypes = service.BlogTypeBLL.GetEntities(d=>d.ParentId==id).ToList();
             return View();
         }
 
@@ -26,8 +25,8 @@ namespace MyBlog.Areas.Fwadmin.Controllers
             service.BlogTypeBLL.AddEntity(model);
 
 
-            List<BlogType> blogTypes = service.BlogTypeBLL.GetAllEntities().ToList();
-            ViewBag.BlogTypes = blogTypes;
+
+            GetViewBag();
             return View();
         }
 
@@ -43,6 +42,7 @@ namespace MyBlog.Areas.Fwadmin.Controllers
         public ActionResult Edit(int id)
         {
             BlogType blogType = service.BlogTypeBLL.GetEntity(id);
+            GetViewBag();
             return PartialView(blogType);
         }
 
@@ -53,6 +53,12 @@ namespace MyBlog.Areas.Fwadmin.Controllers
             TryUpdateModel(blogType);
             service.BlogTypeBLL.UpdateEntity(blogType);
             return View("Successed");
+        }
+
+
+        public void GetViewBag()
+        {
+            ViewBag.BlogTypes = service.BlogTypeBLL.GetAllEntities().ToList();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿@using MyBlog.Model
+﻿@using MyBlog.Expand
+@using MyBlog.Model
 
 @{
     Layout = null;
@@ -28,20 +29,7 @@
     <div class="pd-20 text-c">
         <form class="Huiform" action="/Fwadmin/BlogType/Index" method="post">
             上级栏目：
-            <select class="select" id="sel_Sub" name="ParentId" onChange="SetSubID(this);">
-                <option value="0">顶级分类</option>
-                @{
-                    foreach (var blogType in ((List<BlogType>)ViewBag.BlogTypes).Where(d => d.ParentId == 0))
-                    {
-                        <option value="@blogType.BlogTypeId">├@blogType.Value</option>
-                        foreach (var bType in ((List<BlogType>)ViewBag.BlogTypes).Where(d => d.ParentId == blogType.BlogTypeId))
-                        {
-                            <option value="@bType.BlogTypeId">&nbsp;&nbsp;├ @bType.Value</option>
-
-                        }
-                    }
-                }
-            </select>
+            @Html.Raw(Html.GetBlogTypes("ParentId",0))
             <input type="hidden" id="hid_ccid" value="">
             <input class="input-text" style="width:250px" type="text" value="" placeholder="输入分类" id="article-class-val" name="value"><button type="button" class="btn btn-success" id="" name="" onClick="article_class_add(this);"><i class="icon-plus"></i> 添加</button>
         </form>
@@ -59,27 +47,16 @@
                 <tbody>
                 @{
                         int i = 0;
-                        foreach (var blogType in ((List<BlogType>)ViewBag.BlogTypes).Where(d => d.ParentId == 0).OrderBy(d => d.OrderId))
+                        foreach (var blogType in ((List<BlogType>)ViewBag.BlogTypes).OrderBy(d => d.OrderId))
                         {
                             i++;
                             <tr class="text-c">
                                 <td><input type="checkbox" name="" value=""></td>
                                 <td>@i</td>
                                 <td>@blogType.OrderId</td>
-                                <td class="text-l">@blogType.Value</td>
-                                <td class="f-14"><a title="编辑" href="javascript:;" onClick="article_class_edit('1', '820', '300', '分类编辑', '/Admin/BlogType/Edit/@blogType.BlogTypeId')" style="text-decoration: none"><i class="icon-edit"></i></a> <a title="删除" href="javascript:;" onClick=" article_class_del(this, '1' )" class="ml-5" style="text-decoration: none"><i class="icon-trash"></i></a></td>
+                                <td class="text-l"><a href="/Fwadmin/BlogType/Index/@blogType.BlogTypeId">@blogType.Value</a></td>
+                                <td class="f-14"><a title="编辑" href="javascript:;" onClick="article_class_edit('1', '820', '300', '分类编辑', '/FwAdmin/BlogType/Edit/@blogType.BlogTypeId')" style="text-decoration: none"><i class="icon-edit"></i></a> <a title="删除" href="javascript:;" onClick="article_class_del(this, '1' )" class="ml-5" style="text-decoration: none"><i class="icon-trash"></i></a></td>
                             </tr>
-                            foreach (var dic in ((List<BlogType>)ViewBag.BlogTypes).Where(d => d.ParentId == blogType.BlogTypeId).OrderBy(d => d.OrderId))
-                            {
-                                i++;
-                                <tr class="text-c">
-                                    <td><input type="checkbox" name="" value=""></td>
-                                    <td>@i</td>
-                                    <td>@dic.OrderId</td>
-                                    <td class="text-l">&nbsp;&nbsp;├&nbsp;@dic.Value</td>
-                                    <td class="f-14"><a title="编辑" href="javascript:;" onClick="article_class_edit('2', '820', '300', '分类编辑', '/Admin/BlogType/Edit/@dic.BlogTypeId')" style="text-decoration: none"><i class="icon-edit"></i></a> <a title="删除" href="javascript:;" onClick=" article_class_del(this, '2' )" class="ml-5" style="text-decoration: none"><i class="icon-trash"></i></a></td>
-                                </tr>
-                            }
                         }
                     }
                 </tbody>
