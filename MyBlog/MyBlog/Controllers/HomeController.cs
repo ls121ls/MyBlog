@@ -112,10 +112,10 @@ namespace MyBlog.Controllers
 
         public ActionResult DownloadDta()
         {
-            Account account = service.AccountBLL.GetEntities(d => d.Name == "admin").FirstOrDefault();
+            Account account = service.AccountBLL.GetEntities(d => d.AccountName == "admin").FirstOrDefault();
             if (account == null)
             {
-                account.Name = "admin";
+                account.AccountName = "admin";
                 account.Password = "123456";
                 service.AccountBLL.AddEntity(account);
             }

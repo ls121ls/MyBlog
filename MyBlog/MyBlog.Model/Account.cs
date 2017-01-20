@@ -10,7 +10,7 @@ namespace MyBlog.Model
     {
         public int AccountId { get; set; }
 
-        public string Name { get; set; }
+        public string AccountName { get; set; }
 
         public string Password { get; set; }
 
@@ -18,8 +18,14 @@ namespace MyBlog.Model
 
         public DateTime CreateDate { get; set; }
 
-        public DateTime EndDate { get; set; }
+        public DateTime LastTime { get; set; }
 
         public int Count { get; set; }
+
+        public int Type { get; set; }
+
+        public bool IsShow { get; set; }
+
+        public bool IsDelete { get; set; }
     }
 }

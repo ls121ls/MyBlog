@@ -565,6 +565,7 @@
     <Content Include="Views\WelFare\Index.cshtml" />
     <Content Include="Views\WelFare\OnLinePlay.cshtml" />
     <Content Include="Areas\Fwadmin\Views\Account\Index.cshtml" />
+    <Content Include="Areas\Fwadmin\Views\Account\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

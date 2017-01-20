@@ -27,21 +27,19 @@
     <div class="pd-20">
         <div class="text-c">
             <form class="Huiform" method="post" action="" target="_self">
-                <input type="text" placeholder="帐号" autocomplete="off" value="" class="input-text">
-                <input type="password" placeholder="密码" autocomplete="off" value="" class="input-text">
-                <input type="password" placeholder="确认密码" autocomplete="off" value="" class="input-text">
-                <select class="select" name="admin-role" size="1">
-                    <option value="0">超级管理员</option>
-                    <option value="1">总编</option>
-                    <option value="2">栏目主辑</option>
-                    <option value="3">栏目编辑</option>
+                <input type="text" placeholder="帐号" name="AccountName" autocomplete="off" value="" class="input-text">
+                <input type="password" placeholder="密码" name="Password" autocomplete="off" value="" class="input-text">
+                <input type="password" placeholder="确认密码" name="Password" autocomplete="off" value="" class="input-text">
+                <select class="select" name="Type" size="1">
+                    <option value="2">普通用户</option>
+                    <option value="1">管理员</option>
                 </select>
-                <button type="button" class="btn btn-success" id="" name="" onClick="admin_add(this);"><i class="icon-plus"></i> 添加</button>
+                <button type="button" class="btn btn-success" id="" name="" onClick="admin_add();"><i class="icon-plus"></i> 添加</button>
             </form>
         </div>
         <div class="cl pd-5 bg-1 bk-gray mt-20">
             <span class="l"><a href="javascript:;" onClick="datadel()" class="btn btn-danger radius"><i class="icon-trash"></i> 批量删除</a></span>
-            <span class="r">共有数据：<strong>54</strong> 条</span>
+            <span class="r">共有数据：<strong>@ViewBag.Models.Count </strong> 条</span>
         </div>
         <table class="table table-border table-bordered table-bg">
             <thead>
@@ -59,22 +57,42 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach (Account account in ViewBag.Models)
-            {
-                <tr class="text-c">
-                    <td><input type="checkbox" value="1" name=""></td>
-                    <td>1</td>
-                    <td>@account.Name</td>
-                    <td>超级管理员</td>
-                    <td>2014-6-11 11:11:42</td>
-                    <td class="admin-status"><span class="label label-success">已启用</span></td>
-                    <td class="f-14 admin-manage"><a style="text-decoration: none" onClick="admin_stop(this, '10001')" href="javascript:;" title="停用"><i class="icon-hand-down"></i></a> <a title="编辑" href="javascript:;" onClick="admin_edit('4', '400', '310', '角色编辑', 'admin-edit.html')" class="ml-5" style="text-decoration: none"><i class="icon-edit"></i></a> <a title="删除" href="javascript:;" onClick="admin_del(this, '1')" class="ml-5" style="text-decoration: none"><i class="icon-trash"></i></a></td>
-                </tr>
-            }
+                @{
+                    int i = 0;
+                    foreach (Account account in ViewBag.Models)
+                    {
+                        i++;
+                        <tr class="text-c">
+                            <td><input type="checkbox" value="1" name=""></td>
+                            <td>@i</td>
+                            <td>@account.AccountName</td>
+                            <td>@(account.Type == 1 ? "管理员" : "普通用户")</td>
+                            <td>@account.LastTime</td>
+                            <td class="admin-status">
+                                @if (account.IsShow)
+                                {
+                                    <span class="label label-success">已启用</span>
+                                }
+                                else
+                                {
+                                    <span class="label">已停用</span>
+                                }
+                            </td>
+                            <td class="f-14 admin-manage">
+                                <a style="text-decoration: none" onClick="admin_stop(this, @account.AccountId)" href="javascript:;" title="停用"><i class="icon-hand-down"></i></a>
+                                <a title="编辑" href="javascript:;" onClick="article_class_edit('1', '400', '610', '角色编辑', '/FwAdmin/Account/Edit/@account.AccountId')" class="ml-5" style="text-decoration: none"><i class="icon-edit"></i></a> <a title="删除" href="javascript:;" onClick="admin_del(this, @account.AccountId)" class="ml-5" style="text-decoration: none"><i class="icon-trash"></i></a>
+                            </td>
+                        </tr>
+                    }
+                }
             </tbody>
         </table>
     </div>
     @Scripts.Render("~/bundles/adminjs")
-
+    <script>
+    function admin_add() {
+        $("form").submit();
+    }
+    </script>
 </body>
 </html>

@@ -21,7 +21,7 @@ namespace MyBlog.BLL
 
         public Account GetUserByLoginName(string name)
         {
-            return db.Accounts.FirstOrDefault(d => d.Name == name);
+            return db.Accounts.FirstOrDefault(d => d.AccountName == name);
         }
 
 
